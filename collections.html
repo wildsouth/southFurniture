@@ -1,0 +1,1327 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="/styles/nav-style.css">
+    <link rel="stylesheet" href="./styles/hero-style.css">
+    <link rel="stylesheet" href="./styles/collection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a669beee82.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="all-content">
+
+        <div class="btn-container">
+            <button class="btn btn-outline-primary" onclick="filterProducts('all')">All</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('dining')">Dining Sets</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('sofa')">Sofas</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('bedroom')">Bedroom Sets</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('accessories')">Accessories</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('kitchen')">Kitchen Cabinets</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('office')">Office Sets</button>
+            <button class="btn btn-outline-primary" onclick="filterProducts('tv')">TV Stands</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row" id="product-grid" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn1.jpg"
+                data-category="dining" data-id="1" data-title="Natural Dining Set" data-price="3000000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn1.jpg" class="card-img-top" alt="Dining Set">
+                    <div class="card-body">
+                        <h3 class="card-title">Natural Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦3,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn2.jpg"
+                data-category="dining" data-id="2" data-title="Palermo Dining Set" data-price="4000000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Palermo Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦4,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn3.jpg"
+                data-category="dining" data-id="3" data-title="Venedik Dining Set" data-price="5500000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Venedik Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦5,500,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn4.jpg"
+                data-category="dining" data-id="4" data-title="Vera Dining Set" data-price="2050000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Vera Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦2,050,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn5.jpg"
+                data-category="dining" data-id="5" data-title="Alina Dining Set" data-price="2000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Alina Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦2,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn6.jpg"
+                data-category="dining" data-id="6" data-title="Bianca Dining Set" data-price="5000000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bianca Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦5,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/dn7.jpg"
+                data-category="dining" data-id="7" data-title="Perla Dining Set" data-price="7050000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/dn7.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Perla Dining Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Modern Dining Set</p>
+                        <h6>₦7,050,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/a1.jpg"
+                data-category="accessories" data-id="8" data-title="Oval Mirrors" data-price="300000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/a1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Oval Mirrors</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Enhance Your Home</p>
+                        <h6>₦300,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/a2.jpg"
+                data-category="accessories" data-id="9" data-title="sculptures" data-price="1900000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/a2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">sculptures</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Enhance Your Home</p>
+                        <h6>₦1,900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/a3.jpg"
+                data-category="accessories" data-id="10" data-title="Vases" data-price="400000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/a3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Vases</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Enhance Your Home</p>
+                        <h6>₦400,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/a4.jpg"
+                data-category="accessories" data-id="11" data-title="Flower Vase" data-price="150000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/a4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Flower Vase</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Enhance Your Home</p>
+                        <h6>₦150,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/a5.jpg"
+                data-category="accessories" data-id="12" data-title="Antique Lamp" data-price="900000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/a5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Antique Lamp</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Enhance Your Home</p>
+                        <h6>₦900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd1.jpg"
+                data-category="bedroom" data-id="13" data-title="Palermo Bedroom Set" data-price="1000000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Palermo Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd2.jpg"
+                data-category="bedroom" data-id="14" data-title="Vera Bedroom Set" data-price="900000"
+                data-aos="fade-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Vera Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd3.jpg"
+                data-category="bedroom" data-id="15" data-title="Bedroom Set" data-price="1500000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦1,500,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd4.jpg"
+                data-category="bedroom" data-id="16" data-title="Bedroom Set" data-price="990000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦990,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd5.jpg"
+                data-category="bedroom" data-id="17" data-title="Bedroom Set" data-price="200000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦2,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd6.jpg"
+                data-category="bedroom" data-id="18" data-title="Bedroom Set" data-price="3000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦3,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd7.jpg"
+                data-category="bedroom" data-id="19" data-title="Bedroom Set" data-price="2500000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd7.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦2,500,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/bd8.jpg"
+                data-category="bedroom" data-id="20" data-title="Bedroom Set" data-price="800000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/bd8.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Bedroom Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Bedroom Set</p>
+                        <h6>₦800,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/k1.jpg"
+                data-category="kitchen" data-id="21" data-title="Kitchen Set" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/k1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Kitchen Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                        </div>
+                        <p>Get Your Kitchen Right</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/k2.jpg"
+                data-category="kitchen" data-id="22" data-title="Kitchen Set" data-price="2000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/k2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Kitchen Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Get Your Kitchen Right</p>
+                        <h6>₦2,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/k3.jpg"
+                data-category="kitchen" data-id="23" data-title="Kitchen Set" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/k3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Kitchen Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Get Your Kitchen Right</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/k4.jpg"
+                data-category="kitchen" data-id="24" data-title="Kitchen Set" data-price="800000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/k4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Kitchen Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Get Your Kitchen Right</p>
+                        <h6>₦800,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/k5.jpg"
+                data-category="kitchen" data-id="25" data-title="Kitchen Set" data-price="2000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/k5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Kitchen Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Get Your Kitchen Right</p>
+                        <h6>₦2,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o1.jpg"
+                data-category="office" data-id="26" data-title="Office Set" data-price="400000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Office Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦400,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o2.jpg"
+                data-category="office" data-id="27" data-title="Office Set" data-price="300000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Office Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦300,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o3.jpg"
+                data-category="office" data-id="28" data-title="Office Set" data-price="500000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Office Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦500,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o4.jpg"
+                data-category="office" data-id="29" data-title="Office Set" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Office Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o5.jpg"
+                data-category="office" data-id="30" data-title="Office Set" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Office Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/o6.jpg"
+                data-category="office" data-id="31" data-title="Office Set" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/o6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Dining</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Office Space</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s1.jpg"
+                data-category="sofa" data-id="32" data-title="Sofa Set" data-price="4000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦4,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s2.jpg"
+                data-category="sofa" data-id="33" data-title="Sofa Set" data-price="5900000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦5,900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s3.jpg"
+                data-category="sofa" data-id="34" data-title="Sofa Set" data-price="7000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦7,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s4.jpg"
+                data-category="sofa" data-id="35" data-title="Sofa Set" data-price="5000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s4.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦5,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s5.jpg"
+                data-category="sofa" data-id="36" data-title="Sofa Set" data-price="7500000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦7,500,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s6.jpg"
+                data-category="sofa" data-id="37" data-title="Sofa Set" data-price="9000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦9,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s7.jpg"
+                data-category="sofa" data-id="38" data-title="Sofa Set" data-price="6900000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s7.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦6,900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s8.jpg"
+                data-category="sofa" data-id="39" data-title="Sofa Set" data-price="7550000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s8.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦7,550,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv1.jpg"
+                data-category="tv" data-id="40" data-title="Tv Stand" data-price="400000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦400,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv2.jpg"
+                data-category="tv" data-id="41" data-title="Tv Stand" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv3.jpg"
+                data-category="tv" data-id="42" data-title="Tv Stand" data-price="800000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦800,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv5.jpg"
+                data-category="tv" data-id="43" data-title="Tv Stand" data-price="800000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv5.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦800,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv6.jpg"
+                data-category="tv" data-id="44" data-title="Tv Stand" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv6.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv7.jpg"
+                data-category="tv" data-id="45" data-title="Tv Stand" data-price="900000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv7.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦900,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/s9.jpg"
+                data-category="sofa" data-id="46" data-title="Sofa Set" data-price="6000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/s9.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Sofa Set</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Comfy Sofa</p>
+                        <h6>₦6,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv4.jpg"
+                data-category="tv" data-id="47" data-title="Tv Stand" data-price="800000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv4.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦800,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-image="./images/tv8.jpg"
+                data-category="tv" data-id="48" data-title="Tv Stand" data-price="1000000" data-aos="fade-up"
+                data-aos-duration="1500">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                    src="./images/icon-cart.svg" alt=""></i></button>
+                        <button type="button" class="btn btn-secondary quick-view-btn" title="Quick View"><i><img
+                                    src="./images/magnifying-glass-solid.svg" alt=""></i></button>
+                    </div>
+                    <img src="./images/tv8.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Tv Stand</h3>
+                        <div class="star">
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star checked"></i>
+                            <i class="bx bxs-star "></i>
+                            <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Luxury Tv Stand</p>
+                        <h6>₦1,000,000 <button class="btn btn-primary order-btn">Order Now</button></h6>
+                    </div>
+                </div>
+            </div>
+            <button id="scrollTopBtn" ; style="position: fixed; bottom: 100px; right: 50px;
+            width: 40px;
+            border: none;
+            background-color: transparent;">
+                <i class='bx bx-up-arrow' style="font-size: 30px;"></i>
+            </button>
+
+            <div id="no-results" class="text-center my-4" style="display: none;">
+                <h5>No products found.</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- quick view -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        fetch('/nav.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

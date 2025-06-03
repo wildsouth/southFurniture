@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+
+#logo  img {
+    width: 150px;
+    height: 75px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+
+.all-content {
+    background:#d8d6d6;
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: #486b68;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+html ::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* html ::-web-s */
+
+#navbar {
+    background-color: #486b66;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+#navbar a {
+    color: #9e9a79;
+    text-transform: uppercase;
+}
+
+#navbar a:hover {
+    color: #486b66;
+}
+
+#navbar .icons a {
+    text-decoration: none;
+}
+
+
+.nav-item .nav-link  {
+    color: #9e9a79;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+.nav-item .nav-link:hover {
+    background:#9e9a79;
+    border-radius: 5px;
+    color: #486b68;
+}
+
+.nav-item ul {
+    color: #9e9a79;
+    background-color: #486b66;
+}
+
+.nav-item .dropdown-item:hover {
+    color: #486b66;
+    background-color: #9e9a79;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-sizing: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#navbar .icons  {
+    margin-left: 40px;
+}
+
+#navbar .icons img {
+    margin-left:10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#navbar .icons img:hover {
+    transform: translateY(-5px);
+}
+
+#navbar .icons a:last-child {
+    border-left: 1px solid #9e9a79;
+    margin-left: 10px;
+
+}
+
+#searchModal, #userModal{
+    color: #798571;
+}
+
+#contact-btn, #searchBtn{
+    width: 200px;
+    height: 36px;
+    background: #486b66;
+    text-transform: capitalize;
+    border: 2px solid #486b66;
+    color: #9e9a79;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#contact-btn:hover {
+     background-color: #9e9a79;
+    color: #486b66;
+}
+.modal-body input{
+    border: 2px solid #486b66;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#create input{
+    border: 2px solid #486b66;
+}
+
+#create label, h3, p {
+    color: #486b66;
+}
+
+#create span {
+    color: red;
+}
+
+#create {
+    background: #9e9a79;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+
+#cart-count {
+    padding: 1px 4px 4px 4px;
+}
+
+#notification-count{
+    padding: 1px 4px 4px 4px;
+}
