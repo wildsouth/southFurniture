@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation</title>
-    <link rel="stylesheet" href="/styles/nav-style.css">
+    <link rel="stylesheet" href="./styles/nav-style.css">
     <link rel="stylesheet" href="./styles/hero-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <script>
-        fetch('/nav.html')
+        fetch('./nav.html')
             .then(res => res.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
