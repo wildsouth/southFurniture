@@ -314,3 +314,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // Make filter globally callable for inline onclick=""
   window.filterProducts = filterProducts;
 });
+
+
+// Form submission (contact form)
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const popup = document.getElementById("thank-you-popup");
+
+        fetch("https://formspree.io/f/xwpbewzk", {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: new FormData(contactForm)
+        }).then(response => {
+            if (response.ok) {
+                if (popup) {
+                    popup.classList.remove("d-none");
+                    setTimeout(() => popup.classList.add("d-none"), 4000);
+                }
+                contactForm.reset();
+            } else {
+                alert("Oops! Something went wrong. Please try again.");
+            }
+        });
+    });
+}
